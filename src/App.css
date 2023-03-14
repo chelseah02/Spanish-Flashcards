@@ -69,3 +69,11 @@ body {
   opacity: 1;
   font-weight:500;
 }
+
+.background-red {
+  background-color: rgb(255, 80, 80);
+}
+
+.background-green {
+  background-color: aquamarine;
+}
