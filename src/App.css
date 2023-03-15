@@ -71,9 +71,13 @@ body {
 }
 
 .background-red {
-  background-color: rgb(255, 80, 80);
+  background-color: rgb(255, 80, 80) !important;
 }
 
 .background-green {
-  background-color: aquamarine;
+  background-color: aquamarine !important;
+}
+
+#input, .btn {
+  background-color: rgb(255, 204, 138);
 }

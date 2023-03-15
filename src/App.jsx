@@ -74,20 +74,14 @@ function App() {
       setIndex(cardIndex - 1);
   }
   // State variables and methods for input field
-  const [userInput, setUserInput] = useState('');
+  const [userInput, setUserInput] = useState("");
   const [isBackgroundGreen, setBackground] = useState(0);
-  const handleChange = (props) => {
-    setUserInput({userInput: props.value})
-    console.log(userInput);
-    if (userInput == props.correctAnswer) {
-      setBackground(isBackgroundGreen + 1) // so background is green
-    }
-    else if (userInput == '') {
-      setBackground(isBackgroundGreen)
-    }
-    else {
-      setBackground(isBackgroundGreen - 1) // background is red
-    }
+ 
+  const handleSubmit = (props) => {
+    if (userInput === vocab[cardIndex]["answer"]) {
+      setBackground(isBackgroundGreen + 1); }// so background green = 1 and is correct 
+    else
+      setBackground(isBackgroundGreen - 1); // so useState var = 0 and is incorrect
   }
 
   return (
@@ -99,17 +93,21 @@ function App() {
         <Card question={vocab[cardIndex]["question"]} answer={vocab[cardIndex]["answer"]}></Card>
       </div>
       <div className='guess'>Guess: 
-      <input className="input" type="text" 
+      <input id="input" className="" type="text" 
         value={userInput} 
         placeholder="Enter your guess here"
         correctAnswer={vocab[cardIndex]["answer"]}
-        onChange= {handleChange}
+        onChange= {(e) => setUserInput(e.target.value)}
       />
-      <button type='submit' className='submit-btn'>Submit</button>
+      <button type='submit' className={(isBackgroundGreen == 1)? "background-green" : "background-red"}
+      value={userInput}
+      correctAnswer={vocab[cardIndex]["answer"]}
+      onClick= {handleSubmit}> Submit
+      </button>
     </div>
       <br></br>
-      <button className='next' type='next' onClick={handlePrev}>🡨</button>
-      <button className='next' type='next' onClick={handleNext}>🡪</button>
+      <button className='btn' type='next' onClick={handlePrev}>🡨</button>
+      <button className='btn' type='next' onClick={handleNext}>🡪</button>
     </div>
   )
 }
