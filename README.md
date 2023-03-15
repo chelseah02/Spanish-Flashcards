@@ -47,7 +47,7 @@ GIF created with GIPHY
 I was able to fix issues from last week's lab (next button functionality and flipping the card back and forth when it is clicked). I also implemented previous button features and implemented the input field. I am experiencing challenges with the input field processing user input and providing visual feedback. I will work to fix this issues before the 48 hour extension after this initial submission. (AS OF 3/13/2023 9:55PM ET)
 
 AS OF 3/15/2023 7:00PM ET
-All problems reguarding user input are now fixed. Users can enter their guess before seeing the card answer and receive visual feedback by the color or the submit button. They can also use previous or next buttons to navigate between cards, and of course, the cards can still be flipped back and forth to see the wuestion and answer pairing. 
+All problems reguarding user input are now fixed. Users can enter their guess before seeing the card answer and receive visual feedback by the color or the submit button. They can also use previous or next buttons to navigate between cards, and the cards can still be flipped back and forth to see the question and answer pairing. 
 
 ## License
 
