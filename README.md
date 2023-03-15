@@ -2,9 +2,9 @@
 
 Submitted by: Chelsea Heredia
 
-This web app: Allows users to test their Spanish skills with some vocab flashcards!
+This web app: Allows users to test their Spanish skills with some vocab flashcards! User can click to see the Spanish translation from a given English word. They can also enter their guess before seeing the answer and the submit button will provide's visual feedback by turning green or red.
 
-Time spent: 5 hours spent in total
+Time spent: 9 hours spent in total
 
 ## Required Features
 
@@ -28,9 +28,12 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's is the original walkthrough of implemented user stories: (For submission Monday 3/13)
 
 <img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGVlYzgyY2FlOWUzYTI4MThkMjM1YWJlOWY2M2MwMDU0Y2VmNDdlYSZjdD1n/ieMlmFZnrPRupGrSnF/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Here is an updated walkthough showing the correct funtionality with user input (For updated submission 3/15)
+<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWFiNmYwODUwMGEzYWFjNTY5MjRmNzg3ZjAxYzU4NTdmZGVhNjc4NSZjdD1n/D38S1J9y9N0VgEO4ca/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with GIPHY
@@ -42,6 +45,9 @@ GIF created with GIPHY
 ## Notes
 
 I was able to fix issues from last week's lab (next button functionality and flipping the card back and forth when it is clicked). I also implemented previous button features and implemented the input field. I am experiencing challenges with the input field processing user input and providing visual feedback. I will work to fix this issues before the 48 hour extension after this initial submission. (AS OF 3/13/2023 9:55PM ET)
+
+AS OF 3/15/2023 7:00PM ET
+All problems reguarding user input are now fixed. Users can enter their guess before seeing the card answer and receive visual feedback by the color or the submit button. They can also use previous or next buttons to navigate between cards, and of course, the cards can still be flipped back and forth to see the wuestion and answer pairing. 
 
 ## License
 
